@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yug Subedi | Portfolio</title>
+    <!-- Bootstrap 5 CSS CDN (No JS needed) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Pure CSS Smooth Scrolling */
+        html { scroll-behavior: smooth; }
+
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Section Spacing */
+        section { min-height: 90vh; padding: 80px 0; display: flex; align-items: center; }
+
+        .text-accent { color: #f59e0b; }
+        .bg-card { background-color: #1e293b; }
+        .border-accent { border-color: #f59e0b !important; }
+        
+        .card:hover { transform: translateY(-4px); transition: 0.3s; }
+    </style>
+</head>
+<body class="pt-5">
+
+    <!-- 1. Responsive Navigation Bar (Pure CSS / Responsive Grid) -->
+    <nav class="navbar navbar-dark bg-dark fixed-top border-bottom border-secondary shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-accent" href="#hero">Yug Subedi</a>
+            <div class="d-flex gap-3">
+                <a class="text-white text-decoration-none small fw-bold" href="#hero">Home</a>
+                <a class="text-white text-decoration-none small fw-bold" href="#about">About</a>
+                <a class="text-white text-decoration-none small fw-bold" href="#skills">Skills</a>
+                <a class="text-white text-decoration-none small fw-bold" href="#projects">Projects</a>
+                <a class="text-white text-decoration-none small fw-bold" href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Hero Section -->
+    <section id="hero" class="w-100">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h1 class="display-4 fw-bold mb-3">Hi, I'm <span class="text-accent">Yug Subedi</span></h1>
+                    <p class="lead text-secondary mb-4">Passionate Web & Backend Developer crafting responsive modern applications.</p>
+                    <a href="#projects" class="btn btn-warning me-2 fw-bold">View Projects</a>
+                    <a href="#contact" class="btn btn-outline-light">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. About Me Section -->
+    <section id="about" class="w-100 bg-card py-5">
+        <div class="container">
+            <h2 class="fw-bold mb-3 text-accent border-bottom border-secondary pb-2">About Me</h2>
+            <p class="lead text-light mb-4" style="max-width: 750px;">
+                I am a Computer Science and Engineering student at CUSAT, Kerala. I enjoy creating clean, modern user interfaces, dynamic frontend layouts, and building robust backend database architectures.
+            </p>
+            <div class="card bg-dark text-white p-3 border-start border-4 border-accent shadow-sm">
+                <h5 class="fw-bold text-accent mb-1">Education</h5>
+                <p class="mb-0 text-secondary">Pursuing B.Tech in Computer Science and Engineering at Cochin University of Science and Technology (CUSAT), Kerala.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Skills Section -->
+    <section id="skills" class="w-100 py-5">
+        <div class="container">
+            <h2 class="fw-bold mb-4 text-accent border-bottom border-secondary pb-2">My Skills</h2>
+            
+            <div class="row g-4">
+                <!-- Programming Languages -->
+                <div class="col-md-6">
+                    <div class="card bg-card p-4 border border-secondary h-100 shadow-sm">
+                        <h5 class="fw-bold text-accent mb-3">Programming Languages</h5>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge bg-dark border border-secondary text-white p-2">Python</span>
+                            <span class="badge bg-dark border border-secondary text-white p-2">JavaScript</span>
+                            <span class="badge bg-dark border border-secondary text-white p-2">Java</span>
+                            <span class="badge bg-dark border border-secondary text-white p-2">C++</span>
+                            <span class="badge bg-dark border border-secondary text-white p-2">C</span>
+                            <span class="badge bg-dark border border-secondary text-white p-2">C#</span>
+                            <span class="badge bg-dark border border-secondary text-white p-2">Kotlin</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Technologies & Frameworks -->
+                <div class="col-md-6">
+                    <div class="card bg-card p-4 border border-secondary h-100 shadow-sm">
+                        <h5 class="fw-bold text-accent mb-3">Web & Frameworks</h5>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge bg-dark border border-secondary text-white p-2">Python & Django</span>
+                            <span class="badge bg-dark border border-secondary text-white p-2">Node.js</span>
+                            <span class="badge bg-dark border border-secondary text-white p-2">HTML</span>
+                            <span class="badge bg-dark border border-secondary text-white p-2">CSS</span>
+                            <span class="badge bg-dark border border-secondary text-white p-2">Bootstrap / Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="col-md-12">
+                    <div class="card bg-card p-4 border border-secondary shadow-sm">
+                        <h5 class="fw-bold text-accent mb-3">Databases</h5>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge bg-dark border border-secondary text-white p-2">MySQL</span>
+                            <span class="badge bg-dark border border-secondary text-white p-2">NoSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Projects Section (3 Cards) -->
+    <section id="projects" class="w-100 bg-card py-5">
+        <div class="container">
+            <h2 class="fw-bold mb-4 text-accent border-bottom border-secondary pb-2">Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white h-100 shadow-sm border-start border-4 border-accent">
+                        <div class="card-body">
+                            <h5 class="fw-bold text-accent">Shopping List App</h5>
+                            <p class="text-secondary small">Dynamic web utility for managing items with real-time tracking.</p>
+                            <a href="#" class="btn btn-sm btn-outline-warning">View Source</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white h-100 shadow-sm border-start border-4 border-accent">
+                        <div class="card-body">
+                            <h5 class="fw-bold text-accent">Pricing Component</h5>
+                            <p class="text-secondary small">Clean tier-card layout designed with modern responsive CSS.</p>
+                            <a href="#" class="btn btn-sm btn-outline-warning">View Source</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white h-100 shadow-sm border-start border-4 border-accent">
+                        <div class="card-body">
+                            <h5 class="fw-bold text-accent">Portfolio Site</h5>
+                            <p class="text-secondary small">Responsive personal portfolio featuring dark mode aesthetics.</p>
+                            <a href="#" class="btn btn-sm btn-outline-warning">View Source</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Contact Form Section & 7. Footer -->
+    <section id="contact" class="w-100 d-flex flex-column justify-content-between p-0 pt-5">
+        <div class="container my-auto">
+            <h2 class="fw-bold text-center mb-4 text-accent">Get In Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <!-- HTML5 Form Validation without JS -->
+                    <form action="#" method="POST" class="p-4 rounded shadow-sm bg-card border border-secondary">
+                        <div class="mb-3">
+                            <label class="form-label text-light">Name</label>
+                            <input type="text" class="form-control bg-dark text-white border-secondary" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-light">Email</label>
+                            <input type="email" class="form-control bg-dark text-white border-secondary" placeholder="name@example.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-light">Message</label>
+                            <textarea class="form-control bg-dark text-white border-secondary" rows="3" placeholder="Write your message..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning w-100 fw-bold">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-dark text-secondary text-center py-3 w-100 border-top border-secondary mt-5">
+            <p class="mb-0 small">&copy; Yug Subedi 2023</p>
+        </footer>
+    </section>
+
+</body>
+</html>
